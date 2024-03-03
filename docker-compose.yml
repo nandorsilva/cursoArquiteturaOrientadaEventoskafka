@@ -1,0 +1,217 @@
+services:
+     
+  
+  grafana:
+    image: "grafana/grafana:${GRAFANA_VERSION}"
+    ports:
+     - "3000:3000"
+    environment:
+      GF_PATHS_DATA : /var/lib/grafana
+      GF_SECURITY_ADMIN_PASSWORD : kafka
+    volumes:
+     - ./grafana/provisioning:/etc/grafana/provisioning
+     - ./grafana/dashboards:/var/lib/grafana/dashboards
+    container_name: grafana
+    depends_on:
+     - prometheus
+
+  prometheus:
+    image: "prom/prometheus:${PROMETHEUS_VERSION}"
+    ports:
+     - "9090:9090"
+    volumes:
+     - ./etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command: "--config.file=/etc/prometheus/prometheus.yml"
+    container_name: prometheus
+
+  zoonavigator:
+    image: elkozmon/zoonavigator:${ZOONAVIGATOR_VERSION}
+    container_name: zoonavigator
+    ports:
+      - "8000:8000"
+    environment:
+      HTTP_PORT: 8000
+      AUTO_CONNECT_CONNECTION_STRING: zookeeper:2181
+    depends_on:
+      - zookeeper
+
+  jmx-kafka-broker:
+    image: "sscaling/jmx-prometheus-exporter"
+    ports:
+     - "5556:5556"
+    environment:
+     CONFIG_YML : "/etc/jmx_exporter/config.yml"
+     JVM_OPTS: ${PROMETHEUS_JMX_AGENT_JVM_OPTS}
+    volumes:
+     - ./etc/jmx_exporter/config_kafka101.yml:/etc/jmx_exporter/config.yml
+    container_name: jmx-kafka-broker
+    depends_on:
+     - kafka-broker
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:${ZOO_VERSION}
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
+    ports:
+     - "2181:2181"
+    container_name: zookeeper
+    networks:
+      otel:  
+
+  kafka-broker:
+    image: confluentinc/cp-kafka:${KAFKA_VERSION}
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "9991:9991"
+
+    container_name: kafka-broker
+    environment:
+      KAFKA_BROKER_ID: 101
+      KAFKA_JMX_PORT: 9991
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-broker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: kafka-broker:29092
+      CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
+      CONFLUENT_METRICS_ENABLE: 'false'  
+      KAFKA_HEAP_OPTS: ${KAFKA_BROKER_HEAP_OPTS}
+    deploy:
+      resources:
+        limits:
+          memory: ${KAFKA_BROKER_MEM_LIMIT}
+    networks:
+      otel:   
+
+  otel-collector:
+    
+    container_name: otel
+    hostname: otel
+    image: otel/opentelemetry-collector-contrib:0.75.0
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ./otel/otel.yml:/etc/otel-collector-config.yaml
+    restart: unless-stopped
+    ports:     
+      - 4317:4317   # OTLP gRPC receiver
+      - 9200:55679  # zpages     
+    networks:
+      otel:
+  
+  jaeger-all-in-one:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686"
+    networks:
+      otel:
+
+
+  akhq:
+    image: tchiotludo/akhq:${AKHQ_VERSION}
+    container_name: akhq
+    environment:
+      AKHQ_CONFIGURATION: |
+        akhq:
+          connections:
+            docker-kafka-server:
+              properties:
+                bootstrap.servers: "kafka-broker:29092"       
+              connect:
+               - name: "connect"
+                 url: "http://connect:8083"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - kafka-broker    
+      - connect
+    networks:
+      otel:
+      
+  connect:
+      image: fernandos/kafka-connet-strimzi-debezium-251 
+      container_name: kafkaConect
+      ports:
+        - 8083:8083
+      depends_on:      
+         - kafka-broker  
+         - otel-collector 
+         - sqlserver  
+      environment:
+        - KAFKA_LOG4J_OPTS=-Dlog4j.configuration=file:/opt/kafka/config/connect-log4j.properties
+        - KAFKA_CONNECT_BOOTSTRAP_SERVERS=kafka-broker:29092
+        - |
+            KAFKA_CONNECT_CONFIGURATION=
+            key.converter=org.apache.kafka.connect.json.JsonConverter
+            value.converter=org.apache.kafka.connect.json.JsonConverter
+            key.converter.schemas.enable=false
+            value.converter.schemas.enable=false
+            group.id=connect
+            offset.storage.topic=connect-offsets
+            offset.storage.replication.factor=1
+            config.storage.topic=connect-configs
+            config.storage.replication.factor=1
+            status.storage.topic=connect-status
+            status.storage.replication.factor=1  
+            CONNECT_LOG4J_ROOT_LOGLEVEL=DEBUG
+            CONNECT_LOG4J_LOGGERS=org.reflections=ERROR 
+            KAFKA_LOG4J_OPTS=-Dlog4j.configuration=file:/etc/log4j.properties
+            CONNECT_REST_ADVERTISED_HOST_NAME: 'connect'      
+            producer.interceptor.classes=io.debezium.tracing.DebeziumTracingProducerInterceptor
+        - OTEL_SERVICE_NAME=kafka-connect
+        - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+        - OTEL_TRACES_SAMPLER=always_on
+        - OTEL_TRACES_EXPORTER=otlp
+        - OTEL_METRICS_EXPORTER=none
+        - STRIMZI_TRACING=opentelemetry
+      command: /opt/kafka/kafka_connect_run.sh
+      networks:
+         otel:
+
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    ports:
+     - 1433:1433
+    environment:
+     - ACCEPT_EULA=Y
+     - MSSQL_PID=Standard
+     - SA_PASSWORD=Password!
+     - MSSQL_AGENT_ENABLED=true
+    stdin_open: true    
+    volumes:
+      - /sql/init.sql:/opt/sql_scripts/init.sql
+    networks:
+         otel:
+
+  kafka-api:
+      image: fernandos/api-demo-kafka
+      container_name: kafka-api        
+      depends_on:
+          - kafka-broker   
+      networks:
+         otel:
+
+  kafka-worker:
+      image: fernandos/worker-demo-kafka
+      container_name: kafkaworker        
+      depends_on:
+          - kafka-broker   
+          - kafka-api
+      networks:
+         otel:
+
+
+
+networks:
+  otel:
+
