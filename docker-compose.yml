@@ -14,6 +14,8 @@ services:
     container_name: grafana
     depends_on:
      - prometheus
+    networks:
+      otel:   
 
   prometheus:
     image: "prom/prometheus:${PROMETHEUS_VERSION}"
@@ -23,6 +25,8 @@ services:
      - ./etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     command: "--config.file=/etc/prometheus/prometheus.yml"
     container_name: prometheus
+    networks:
+      otel:   
 
   zoonavigator:
     image: elkozmon/zoonavigator:${ZOONAVIGATOR_VERSION}
@@ -34,6 +38,8 @@ services:
       AUTO_CONNECT_CONNECTION_STRING: zookeeper:2181
     depends_on:
       - zookeeper
+    networks:
+      otel:   
 
   jmx-kafka-broker:
     image: "sscaling/jmx-prometheus-exporter"
@@ -47,6 +53,8 @@ services:
     container_name: jmx-kafka-broker
     depends_on:
      - kafka-broker
+    networks:
+      otel:   
 
   zookeeper:
     image: confluentinc/cp-zookeeper:${ZOO_VERSION}
