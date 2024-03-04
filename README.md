@@ -165,17 +165,12 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic alunos --proper
 
 # Consumindo mensagens
 
-```
-kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos
-```
 
 Abre outro terminal, entre no container e produza uma mensagem
 
 ```
 
-//Entrando no containar em outro terminal
-
-docker exec -it kafka1 /bin/bash
+docker exec -it kafka-broker /bin/bash
 
 //Produzindo mensagens
 
@@ -186,9 +181,19 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic alunos --proper
 
 ```
 
+```
+
+//Entrando no containar em outro terminal
+
+ docker exec -it kafka-broker /bin/bash
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos
+```
+
+
+
 Consumindo as mensagens desde o inicio
 
-No primeiro terminal cancela o consumo da mensagem
 
 ```
 >^C  (<- Ctrl + C is used to exit the producer)
@@ -228,7 +233,7 @@ kafka-console-producer --bootstrap-server localhost:9092  --topic alunos
 Listando os consumer groups em outro terminal
 
 ```
-docker exec -it kafka1 /bin/bash
+docker exec -it kafka-broker /bin/bash
 kafka-consumer-groups --bootstrap-server localhost:9092 --list
 ```
 
@@ -239,7 +244,12 @@ kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group aplic
 
 ```
 Deletando os consumer groups
-kafka-consumer-groups --bootstrap-server kafka:29092 --delete --group aplicacao-lab
+
+
+```
+kafka-consumer-groups --bootstrap-server localhost:9092 --delete --group aplicacao-lab
+
+```
 
 Produzindo mensagem no Round Robin Partitioner
 
