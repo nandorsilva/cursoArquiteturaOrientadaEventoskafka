@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qo5qL+ZHDL89DqNOI5wzGTXSDQWIArWeBHp8un07kDfisd2BoOZr7zEiwJ1Ihwopn4kmPVDzbmhCQVtyeae1DA==",
+  "dgSpecHash": "lUINRAOwhn+bRvh9xveXOYbQg2dVMCD2/9FhQDpkI0/ioVUY0fcGisoxyE9tiiocdD8zBQhEBOHuAdAFwN5eAQ==",
   "success": true,
   "projectFilePath": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj",
   "expectedPackageFiles": [

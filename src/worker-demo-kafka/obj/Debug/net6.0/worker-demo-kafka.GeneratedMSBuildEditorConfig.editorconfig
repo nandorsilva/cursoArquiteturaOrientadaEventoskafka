@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = worker_demo_kafka
-build_property.ProjectDir = D:\sourceControl\cursoArquiteturaOrientadaEventoskafka\src\worker-demo-kafka\
+build_property.ProjectDir = d:\sourceControl\cursoArquiteturaOrientadaEventoskafka\src\worker-demo-kafka\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -89,7 +89,6 @@ namespace worker_demo_kafka
 
                         _logger.LogInformation($"Received message at {consumeResult.TopicPartitionOffset}: {message}");
 
-
                         Console.WriteLine($"Received message: {message}");
 
                         using (var activity = Activity.StartActivity("Consumer.mensagem", ActivityKind.Consumer, parentContext.ActivityContext))

@@ -280,16 +280,6 @@ O desafio tera a estrutura da imagem acima:
 
 ### Realizando download dos plugins Debezium Sql Server (Source) e Mongodb (Sink)
 
-```
-
-mkdir plugin
-
-curl https://repo1.maven.org/maven2/io/debezium/debezium-connector-sqlserver/2.5.1.Final/debezium-connector-sqlserver-2.5.1.Final-plugin.tar.gz | tar xvz -C plugin
-
-wget https://repo1.maven.org/maven2/org/mongodb/kafka/mongo-kafka-connect/1.9.1/mongo-kafka-connect-1.9.1-all.jar -P plugin
-
-
-```
 
 Criando a imagem junto com os plugin o Debezium e Mongodb
 
@@ -309,6 +299,12 @@ docker image push <<conta>>/kafka-connet-event-v0
 > As imagens customizadas encontra-se no https://hub.docker.com/ e na máquina local
 
 Listando os plugins existentes, os que são padrões da imagem, do debezium e o Mongodb que foram inseridos na imagem, via arquivo `Dockerfile`
+
+### Subindo os demais ambientes 
+
+```
+docker-compose up -d
+```
 
 ```
 docker exec -it kafkaConect curl  http://localhost:8083/connector-plugins
