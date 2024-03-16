@@ -321,9 +321,6 @@ Listando os plugins existentes, os que são padrões da imagem, do debezium e o 
 docker-compose up -d
 ```
 
-```
-docker exec -it kafkaConect curl  http://localhost:8083/connector-plugins
-```
 
 Listando os plugins existente, os defaults da imagem e os debezium que foi inserido na imagem, via Dockerfile
 
