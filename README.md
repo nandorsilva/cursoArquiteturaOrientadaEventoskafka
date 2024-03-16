@@ -81,12 +81,12 @@ kafka-topics --bootstrap-server localhost:9092 --list
 Alguém lembra das partições? Agora o tópico com mais de uma partição
 
 ```
-kafka-topics --bootstrap-server localhost:9092 --topic alunos-novos --create --partitions 3
+kafka-topics --bootstrap-server localhost:9092 --topic alunos  --create --partitions 3
 ```
 Esqueceu a configuração do tópico?
 
 ```
-kafka-topics --bootstrap-server localhost:9092 --topic alunos-novos --describe
+kafka-topics --bootstrap-server localhost:9092 --topic alunos  --describe
 ```
 
 ... e com fator de replicação
