@@ -155,7 +155,7 @@ O tópico foi criado com configurações default
 
 Ver as configurações na pasta cat /etc/kafka/server.properties
 
-Produzir mensagens com habilitando a Key
+Produzir mensagens habilitando a Key
 
 ```
 kafka-console-producer --bootstrap-server localhost:9092 --topic alunos --property parse.key=true --property key.separator=:
@@ -164,6 +164,17 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic alunos --proper
 ```
 
 # Consumindo mensagens
+
+
+
+```
+
+//Entrando no containar em outro terminal
+
+ docker exec -it kafka-broker /bin/bash
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos
+```
 
 
 Abre outro terminal, entre no container e produza uma mensagem
@@ -181,15 +192,6 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic alunos --proper
 
 ```
 
-```
-
-//Entrando no containar em outro terminal
-
- docker exec -it kafka-broker /bin/bash
-
-kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos
-```
-
 
 
 Consumindo as mensagens desde o inicio
@@ -205,7 +207,7 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos --from-b
 Consumindo mensagens mostrado algumas configurações como a key e value
 
 ```
-kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos  --property print.timestamp=true --property print.key=true --property print.value=true --property print.partition=true --from-beginning
+kafka-console-consumer --bootstrap-server localhost:9092 --topic alunos --property print.headers=true  --property print.timestamp=true --property print.key=true --property print.value=true --property print.partition=true --from-beginning
 
 >^C  (<- Ctrl + C is used to exit the producer)
 
@@ -243,6 +245,19 @@ As configurações do consume groups são :
 kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group aplicacao-lab
 
 ```
+
+Resetando os consumer-groups
+
+```
+kafka-consumer-groups --bootstrap-server localhost:9092 --group aplicacao-lab --reset-offsets --to-latest  --topic alunos -execute
+
+//--to-earliest                           Reset offsets para o mais antigo.
+//--to-latest                             Reset offsets para o mais recente.
+//--to-offset <Long: offset>
+
+```
+
+
 Deletando os consumer groups
 
 
