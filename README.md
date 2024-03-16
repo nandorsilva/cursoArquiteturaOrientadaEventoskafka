@@ -300,7 +300,7 @@ Criando a imagem junto com os plugin o Debezium e Mongodb
 
 
 ```
- docker image build -t <<usuario>>/kafka-connet-debezium-lab-v0  -f Dockerfile .
+ docker image build -t <<usuario>>/kafka-connet-strimzi-debezium-251  -f Dockerfile .
  
 ```
 
@@ -308,7 +308,7 @@ Vamos enviar a imagem para o dockerhub ??
 https://hub.docker.com/
 
 ```
-docker image push <<conta>>/kafka-connet-strimzi-debezium-251 
+docker image push <<conta>>/kafka-connet-strimzi-debezium-251
 ```
 
 > As imagens customizadas encontra-se no https://hub.docker.com/ e na máquina local
