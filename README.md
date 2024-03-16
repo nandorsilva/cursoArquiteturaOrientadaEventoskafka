@@ -60,7 +60,7 @@ Grafana
 
 ---
 
-Vamos executar alguns comandos de dentro do container kafka1
+Vamos executar alguns comandos de dentro do container kafka-broker
 
 Acessar o Shell do container kafka1
 
