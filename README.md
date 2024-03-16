@@ -308,7 +308,7 @@ Vamos enviar a imagem para o dockerhub ??
 https://hub.docker.com/
 
 ```
-docker image push <<conta>>/kafka-connet-event-v0
+docker image push <<conta>>/kafka-connet-strimzi-debezium-251 
 ```
 
 > As imagens customizadas encontra-se no https://hub.docker.com/ e na máquina local
