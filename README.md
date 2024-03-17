@@ -346,7 +346,7 @@ Criando o conector Sql Server
 
 
 ```
- http PUT http://localhost:8083/connectors/connector-sql/config < conector-sql.json
+ http PUT http://localhost:8083/connectors/connector-sql/config < kafka-conect/conector-sql.json
 ```
 
 * Observe os arquivos `conector-postgres.json` e `conector-sql.json`
