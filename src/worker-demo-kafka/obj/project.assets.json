@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
       "Confluent.Kafka/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -55,12 +55,12 @@
           "Microsoft.Extensions.Logging.Abstractions": "3.0.3"
         },
         "compile": {
-          "lib/net6.0/Grpc.Net.Client.dll": {
+          "lib/net7.0/Grpc.Net.Client.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Grpc.Net.Client.dll": {
+          "lib/net7.0/Grpc.Net.Client.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -71,12 +71,12 @@
           "Grpc.Core.Api": "2.55.0"
         },
         "compile": {
-          "lib/net6.0/Grpc.Net.Common.dll": {
+          "lib/net7.0/Grpc.Net.Common.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Grpc.Net.Common.dll": {
+          "lib/net7.0/Grpc.Net.Common.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -196,12 +196,12 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -215,12 +215,12 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -234,12 +234,12 @@
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.Binder.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.Binder.dll": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "related": ".xml"
           }
         },
@@ -350,12 +350,12 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
@@ -366,12 +366,12 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -386,12 +386,12 @@
           "System.Text.Json": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
@@ -407,12 +407,12 @@
           "System.Diagnostics.DiagnosticSource": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -426,12 +426,12 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -525,12 +525,12 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -546,12 +546,12 @@
           "Microsoft.Extensions.Options": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
         },
@@ -565,12 +565,12 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -591,12 +591,12 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Configuration.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Configuration.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Configuration.dll": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -698,12 +698,12 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Options.dll": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Options.dll": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
         },
@@ -721,12 +721,12 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+          "lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "related": ".xml"
           }
         },
@@ -736,16 +736,13 @@
       },
       "Microsoft.Extensions.Primitives/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
@@ -768,12 +765,12 @@
           "OpenTelemetry.Api.ProviderBuilderExtensions": "1.7.0"
         },
         "compile": {
-          "lib/net6.0/OpenTelemetry.dll": {
+          "lib/net8.0/OpenTelemetry.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenTelemetry.dll": {
+          "lib/net8.0/OpenTelemetry.dll": {
             "related": ".xml"
           }
         }
@@ -784,12 +781,12 @@
           "System.Diagnostics.DiagnosticSource": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/OpenTelemetry.Api.dll": {
+          "lib/net8.0/OpenTelemetry.Api.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenTelemetry.Api.dll": {
+          "lib/net8.0/OpenTelemetry.Api.dll": {
             "related": ".xml"
           }
         }
@@ -801,12 +798,12 @@
           "OpenTelemetry.Api": "1.7.0"
         },
         "compile": {
-          "lib/net6.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
+          "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
+          "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
             "related": ".xml"
           }
         }
@@ -819,12 +816,12 @@
           "OpenTelemetry": "1.7.0"
         },
         "compile": {
-          "lib/net6.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
+          "lib/net8.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
+          "lib/net8.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
             "related": ".xml"
           }
         }
@@ -837,12 +834,12 @@
           "OpenTelemetry": "1.7.0"
         },
         "compile": {
-          "lib/net6.0/OpenTelemetry.Extensions.Hosting.dll": {
+          "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenTelemetry.Extensions.Hosting.dll": {
+          "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll": {
             "related": ".xml"
           }
         }
@@ -850,12 +847,12 @@
       "Serilog/3.1.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Serilog.dll": {
+          "lib/net7.0/Serilog.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.dll": {
+          "lib/net7.0/Serilog.dll": {
             "related": ".xml"
           }
         }
@@ -870,12 +867,12 @@
           "Serilog.Extensions.Logging": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/Serilog.Extensions.Hosting.dll": {
+          "lib/net8.0/Serilog.Extensions.Hosting.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.Extensions.Hosting.dll": {
+          "lib/net8.0/Serilog.Extensions.Hosting.dll": {
             "related": ".xml"
           }
         }
@@ -887,12 +884,12 @@
           "Serilog": "3.1.1"
         },
         "compile": {
-          "lib/net6.0/Serilog.Extensions.Logging.dll": {
+          "lib/net8.0/Serilog.Extensions.Logging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.Extensions.Logging.dll": {
+          "lib/net8.0/Serilog.Extensions.Logging.dll": {
             "related": ".xml"
           }
         }
@@ -905,12 +902,12 @@
           "Serilog": "3.1.1"
         },
         "compile": {
-          "lib/net6.0/Serilog.Settings.Configuration.dll": {
+          "lib/net8.0/Serilog.Settings.Configuration.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.Settings.Configuration.dll": {
+          "lib/net8.0/Serilog.Settings.Configuration.dll": {
             "related": ".xml"
           }
         }
@@ -921,12 +918,12 @@
           "Serilog": "3.1.1"
         },
         "compile": {
-          "lib/net6.0/Serilog.Sinks.Console.dll": {
+          "lib/net7.0/Serilog.Sinks.Console.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.Sinks.Console.dll": {
+          "lib/net7.0/Serilog.Sinks.Console.dll": {
             "related": ".xml"
           }
         }
@@ -968,16 +965,13 @@
       },
       "System.Diagnostics.DiagnosticSource/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
@@ -1038,16 +1032,13 @@
       },
       "System.Text.Encodings.Web/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
@@ -1055,7 +1046,7 @@
           "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
             "assetType": "runtime",
             "rid": "browser"
           }
@@ -1064,16 +1055,15 @@
       "System.Text.Json/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encodings.Web": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {
+          "lib/net8.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
+          "lib/net8.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
@@ -2606,7 +2596,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net8.0": [
       "Confluent.Kafka >= 2.3.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.4",
@@ -2619,7 +2609,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fernando Rodrigues\\.nuget\\packages\\": {}
+    "C:\\Users\\fernandos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2627,15 +2617,15 @@
       "projectUniqueName": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj",
       "projectName": "worker-demo-kafka",
       "projectPath": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj",
-      "packagesPath": "C:\\Users\\Fernando Rodrigues\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\fernandos\\.nuget\\packages\\",
       "outputPath": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fernando Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fernandos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -2643,8 +2633,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -2660,8 +2650,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Confluent.Kafka": {
             "target": "Package",
@@ -2716,7 +2706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

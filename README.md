@@ -338,7 +338,7 @@ Executando os scripts
 
 ```
 export  SA_PASSWORD=Password!
-cat sql/init.sql | docker exec -i sqlserver /opt/mssql-tools/bin/sqlcmd -U sa -P $SA_PASSWORD
+cat sql/init.sql | docker exec -i sqlserver /opt/mssql-tools18/bin/sqlcmd -U sa -P $SA_PASSWORD -C
 
 ```
 

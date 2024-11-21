@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|solutionrelative:worker-demo-kafka\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\dev-kafka-demo\\controllers\\kafkacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\controllers\\kafkacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|solutionrelative:worker-demo-kafka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|solutionrelative:worker-demo-kafka\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -19,12 +23,24 @@
       "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\dev-kafka-demo\\kafkaclienthandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\kafkaclienthandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\dev-kafka-demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|solutionrelative:worker-demo-kafka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\dev-kafka-demo\\kafkadependentproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\kafkadependentproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8AA6EA78-DB89-48B7-839A-96DE882F9386}|worker-demo-kafka\\worker-demo-kafka.csproj|solutionrelative:worker-demo-kafka\\worker-demo-kafka.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|d:\\sourcecontrol\\cursoarquiteturaorientadaeventoskafka\\src\\dev-kafka-demo\\dev-kafka-demo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FB994B0C-0B71-487F-99BA-F643B37BE2C0}|dev-kafka-demo\\dev-kafka-demo.csproj|solutionrelative:dev-kafka-demo\\dev-kafka-demo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +50,131 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\Program.cs",
               "RelativeDocumentMoniker": "worker-demo-kafka\\Program.cs",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\Program.cs",
               "RelativeToolTip": "worker-demo-kafka\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T20:11:33.86Z"
+              "WhenOpened": "2024-03-01T20:11:33.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\Program.cs",
               "RelativeDocumentMoniker": "dev-kafka-demo\\Program.cs",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\Program.cs",
               "RelativeToolTip": "dev-kafka-demo\\Program.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAiwEoAAAAVAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAAEoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T14:14:28.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "KafkaController.cs",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\Controllers\\KafkaController.cs",
               "RelativeDocumentMoniker": "dev-kafka-demo\\Controllers\\KafkaController.cs",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\Controllers\\KafkaController.cs",
               "RelativeToolTip": "dev-kafka-demo\\Controllers\\KafkaController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAywB4AAAAlAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwCQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T14:14:18.57Z"
+              "WhenOpened": "2024-03-01T14:14:18.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\appsettings.json",
               "RelativeDocumentMoniker": "dev-kafka-demo\\appsettings.json",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\appsettings.json",
               "RelativeToolTip": "dev-kafka-demo\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-01T00:19:19.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\appsettings.json",
               "RelativeDocumentMoniker": "worker-demo-kafka\\appsettings.json",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\appsettings.json",
               "RelativeToolTip": "worker-demo-kafka\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-02-29T23:51:26.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Worker.cs",
               "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\Worker.cs",
               "RelativeDocumentMoniker": "worker-demo-kafka\\Worker.cs",
               "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\Worker.cs",
               "RelativeToolTip": "worker-demo-kafka\\Worker.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFsAAAAYAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAAAIcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T23:51:20.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T23:51:20.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KafkaClientHandle.cs",
+              "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\KafkaClientHandle.cs",
+              "RelativeDocumentMoniker": "dev-kafka-demo\\KafkaClientHandle.cs",
+              "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\KafkaClientHandle.cs",
+              "RelativeToolTip": "dev-kafka-demo\\KafkaClientHandle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T03:33:06.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dev-kafka-demo",
+              "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\dev-kafka-demo.csproj",
+              "RelativeDocumentMoniker": "dev-kafka-demo\\dev-kafka-demo.csproj",
+              "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\dev-kafka-demo.csproj",
+              "RelativeToolTip": "dev-kafka-demo\\dev-kafka-demo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-14T03:20:41.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "worker-demo-kafka",
+              "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj",
+              "RelativeDocumentMoniker": "worker-demo-kafka\\worker-demo-kafka.csproj",
+              "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\worker-demo-kafka\\worker-demo-kafka.csproj",
+              "RelativeToolTip": "worker-demo-kafka\\worker-demo-kafka.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-14T03:21:01.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KafkaDependentProducer.cs",
+              "DocumentMoniker": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\KafkaDependentProducer.cs",
+              "RelativeDocumentMoniker": "dev-kafka-demo\\KafkaDependentProducer.cs",
+              "ToolTip": "D:\\sourceControl\\cursoArquiteturaOrientadaEventoskafka\\src\\dev-kafka-demo\\KafkaDependentProducer.cs",
+              "RelativeToolTip": "dev-kafka-demo\\KafkaDependentProducer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T03:32:45.635Z"
             }
           ]
         }
