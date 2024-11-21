@@ -369,7 +369,7 @@ Vamos inserir alguns registros nas tabelas e listar os topicos do Kafka
 ```
 export SA_PASSWORD=Password!
 
-docker exec -i sqlserver /opt/mssql-tools/bin/sqlcmd -U sa -P $SA_PASSWORD -d dbEcommerce -Q "INSERT INTO produtos(nome,descricao, valor, quantidade)  VALUES ('Lapis','lapis de escrever', 1.99, 2);"
+docker exec -i sqlserver /opt/mssql-tools18/bin/sqlcmd -U sa -P $SA_PASSWORD -C -d dbEcommerce -Q "INSERT INTO produtos(nome,descricao, valor, quantidade)  VALUES ('Lapis','lapis de escrever', 1.99, 2);"
 
 
 ```
